@@ -1,0 +1,1109 @@
+.Header {
+    position: sticky;
+    top: 0;
+    background: #444;
+    z-index: 1000;
+}
+
+.Header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.Header .logo {
+    display: block;
+    width: 118px;
+    height: 44px;
+    background: url(../img/logo_white_type_02.png) no-repeat;
+    transition: 0.5s;
+}
+
+.Header.on .logo {
+    background: url(../img/logo_red_type_02.png) no-repeat;
+}
+
+.Header .Gnb>ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+.Header .Gnb>ul>li>a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Header .Gnb>ul>li {
+    position: relative;
+    line-height: 100px;
+}
+
+.Header .Gnb>ul>li::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 3px;
+    background: #be161e;
+}
+
+.Header .Gnb>ul>li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.Header .Gnb>ul>li .snb {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 40px 30px 40px;
+
+    display: none;
+}
+
+.Header .Gnb>ul>li:hover .snb {
+    display: block;
+}
+
+.Header .Gnb>ul>li .snb a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+.Header .login {
+    display: flex;
+    gap: 30px;
+}
+
+.Header .login a {
+    font-size: 15px;
+    color: #fff;
+}
+
+
+.MainVisual {
+    position: relative;
+}
+
+.MainVisual .main_slide .itm {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+}
+
+.MainVisual .main_slide .itm .slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* inset: 0 0 0 0; */
+}
+
+
+.MainVisual .main_slide .itm01 .slide-img {
+    background: url(../img/main_01.jpg) no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm02 .slide-img {
+    background: url(../img/main_02.jpg) no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm03 .slide-img {
+    background: url(../img/main_03.jpg) no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm04 .slide-img {
+    background: url(../img/main_04.jpg) no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm05 .slide-img {
+    background: url(../img/main_05.jpg) no-repeat center top/cover;
+}
+
+.MainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 999;
+}
+
+.MainVisual .arrows li {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.MainVisual .arrows .left {
+    position: absolute;
+    top: -32px;
+    left: 15px;
+    width: 37px;
+    height: 75px;
+    background: url(../img/btn_prev_off_white.png);
+}
+
+.MainVisual .arrows .left:hover {
+    background: url(../img/btn_prev_on_red.png);
+}
+
+.MainVisual .arrows .right {
+    position: absolute;
+    top: -32px;
+    right: 15px;
+    width: 37px;
+    height: 75px;
+    background: url(../img/btn_next_off_white.png);
+}
+
+.MainVisual .arrows .right:hover {
+
+    background: url(../img/btn_next_on_red.png);
+}
+
+.MainVisual .dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    gap: 30px;
+    z-index: 999;
+}
+
+.MainVisual .dots li span {
+    font-size: 0;
+
+}
+
+.MainVisual .dots li {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+}
+
+.MainVisual .dots li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: 0.5s linear;
+}
+
+.MainVisual .swiper-wrapper {
+    transition-timing-function: cubic-bezier(0, 0.75, 0.01, -0.13);
+}
+
+.MainVisual .dots li:hover::before {
+    width: 30px;
+    height: 30px;
+}
+
+.MainVisual .dots li.on::before {
+    width: 40px;
+    height: 40px;
+}
+
+.MainVisual .dots li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+.MainItm {
+    position: relative;
+}
+
+.MainItm .swiper-wrapper {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 0.5);
+}
+
+.MainItm .inner {}
+
+.MainItm .itm {
+    height: calc(100vh - 350px);
+}
+
+.MainItm .detail .txt {
+    position: absolute;
+    top: 100px;
+    left: -400px;
+    opacity: 0;
+    width: 350px;
+    z-index: 999;
+}
+
+.MainItm .detail .txt02 {
+    position: absolute;
+    top: 420px;
+    left: -400px;
+    opacity: 0;
+    width: 350px;
+    z-index: 999;
+}
+
+.MainItm .detail .txt h3 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.MainItm .detail .txt02 strong {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.MainItm .detail .txt02 p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.MainItm .detail.swiper-slide-next .txt {
+    animation: op 4s .5s both;
+}
+
+.MainItm .detail.swiper-slide-next .txt02 {
+    animation: op 3s .7s both;
+}
+
+
+.MainItm .detail figure img {
+    width: 100%;
+    transform: scale(0.7);
+    transform-origin: 0 50%;
+}
+
+.MainItm .detail.swiper-slide-next figure img {
+    transform-origin: 100% 50%;
+    transform: scale(1);
+    transition: 0.5s;
+    animation: sc 4s 1s both;
+}
+
+
+@keyframes sc {
+    0% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes op {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+}
+
+.MainItm .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainItm .arrows i {
+    padding: 10px;
+    background: #980101;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.MainBenefit {
+    background: url(../img/main_benefit_obj_01.jpg) no-repeat 100px -100px;
+}
+
+
+.MainBenefit .benefit_wrap {
+    width: calc((100% - 1440px) / 2 + 1425px);
+    background: url(../img/main_benefit_visual.jpg) no-repeat left top/cover;
+    /* 오른쪽으로 밀었다 */
+    margin: 0 0 0 auto;
+    min-height: 400px;
+    padding: 100px 0;
+}
+
+.MainBenefit .benefit_wrap .inner {
+    margin: 0 0 0 0;
+}
+
+.MainBenefit h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.MainBenefit .title {
+    margin: 0 0 40px 0;
+}
+
+.MainBenefit .title p {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.MainBenefit .list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.MainBenefit .list li {
+    text-align: center;
+}
+
+.MainBenefit .list img {
+    margin: 0 0 40px 0;
+}
+
+.MainBenefit .list strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.MainBenefit .list p {
+    font-size: 15px;
+    color: #f2f2f2;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.MainReward {
+    position: relative;
+}
+
+.MainReward::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 100px;
+    height: 150px;
+    transform: rotate(-30deg);
+    background: url(../img/btn_next_on_red.png) no-repeat right top;
+}
+
+.MainReward .inner {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+}
+
+
+.MainReward .title {
+    position: relative;
+    border: 6px solid #222;
+    min-height: 300px;
+}
+
+.MainReward .title .case {
+    position: absolute;
+    top: -6px;
+    bottom: 50px;
+    left: -6px;
+    right: 50px;
+    background: #fff;
+}
+
+.MainReward h2 {
+    margin: 0 0 20px 0;
+}
+
+.MainReward h2 span {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.MainReward h2 strong {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.MainReward .title p {
+    margin: 0 0 10px 0;
+}
+
+.MainReward .title .btn {
+    display: inline-block;
+    padding: 8px 15px 6px 15px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+}
+
+.MainReward .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+
+/* mc : #be161e sc : #907354 */
+.MainReward .list li::before {
+    content: attr(data-num);
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #907354;
+
+
+}
+
+.MainReward .list li strong {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.MainReward .list li p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.MainOrder {
+    padding: 0 0 1px 0;
+}
+
+
+.MainOrder .order_wrap {
+    width: calc((100% - 1440px) / 2 + 1425px);
+    background: #907354;
+}
+
+.MainOrder .order_wrap .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 0 auto;
+    padding: 0 0 0 30px;
+}
+
+.MainOrder .order_wrap .icon01 {
+    background: #907354;
+}
+
+.MainOrder .order_wrap .icon02 {
+    background: #333333;
+}
+
+.MainOrder .order_wrap .icon03 {
+    background: #980101;
+}
+
+.MainOrder .order_wrap .list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px 40px 40px;
+    color: #fff;
+}
+
+.MainOrder .order_wrap .list .txt {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+/* 인라인은 원래 마진 안 먹힘. 그런데 인라인이라도 부모가 플렉스하면 스트레치 되면서 마진도 먹히게 된다. */
+.MainOrder .order_wrap .txt strong {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.MainOrder .order_wrap li .arrow {
+    position: relative;
+    margin: auto 0 0 0;
+    width: 60px;
+    transition: 0.5s;
+}
+
+.MainOrder .order_wrap li:hover .arrow {
+    width: 100px;
+}
+
+.MainOrder .order_wrap li .icon {
+    transition: 0.5s;
+}
+
+.MainOrder .order_wrap li:hover .icon {
+    transform: translate(0, -15px);
+}
+
+.MainOrder .order_wrap .arrow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.MainOrder .order_wrap .arrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.Footer {
+    background: #333333;
+    padding: 50px;
+    color: #f9f9f9;
+}
+
+.Footer .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+}
+
+.Footer .top .left {
+    display: flex;
+    gap: 10px;
+}
+
+.Footer .top .left a {
+    display: block;
+    line-height: 28px;
+    border: 1px solid #666;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.Footer .top .right {
+    display: flex;
+    gap: 31px;
+    line-height: 28px;
+}
+
+.Footer .top .right li {
+    position: relative;
+}
+
+.Footer .top .right li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 12px;
+    background: #666;
+}
+
+.Footer .top .right a {
+    font-size: 15px;
+}
+
+.Footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+
+.Footer .author ul {
+    margin: 0 0 30px 0;
+    line-height: 20px;
+}
+
+.Footer .author ul span {
+    font-size: 0;
+    padding: 0 8px;
+}
+
+.Footer .author ul span::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #666;
+}
+
+.Footer .sns {
+    display: flex;
+    gap: 5px;
+}
+
+.Footer .sns i {
+    padding: 8px;
+    background: #666;
+    color: #ddd;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.mobile_btn {
+    display: none;
+}
+
+
+
+
+
+
+/* 
+
+responsive 768
+
+*/
+
+
+
+
+
+@media (max-width:768px) {
+
+
+    Header h1 {
+        /* r */
+        position: fixed;
+        z-index: 1000;
+        padding: 0 0 0 15px;
+    }
+
+
+    .Header.on .logo {
+        /* r */
+        background: url(../img/logo_white_type_02.png) no-repeat;
+    }
+
+    .Header .Gnb {
+        /* r */
+        position: fixed;
+        inset: 0 auto 0 100%;
+        background: #444;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .Header .Gnb.on {
+        /* r */
+        inset: 0 auto 0 0;
+    }
+
+    .Header .Gnb>ul {
+
+        /* r */
+        flex-direction: column;
+        gap: 0;
+        padding: 150px 30px 0 30px;
+
+    }
+
+    .Header .Gnb>ul>li {
+
+        /* r */
+        line-height: 40px;
+    }
+
+    .Header .Gnb>ul>li>a {
+
+        /* r */
+        border-bottom: 1px solid #666;
+    }
+
+    .Header .Gnb>ul>li::after {
+
+        /* r */
+        bottom: 0;
+        height: 2px;
+    }
+
+
+
+    .Header .Gnb>ul>li .snb {
+
+
+        /* r */
+        position: static;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 0 0 0;
+    }
+
+    .Header .Gnb>ul>li:hover .snb {
+
+
+        /* r */
+        display: none;
+    }
+
+    .Header .Gnb>ul>li .snb a {
+
+        /* r */
+        padding: 0 0 0 15px;
+    }
+
+
+    .Header .login {
+
+        /* r */
+        display: none;
+    }
+
+
+    .MainVisual .main_slide .itm {
+
+
+        /* r */
+        height: 500px;
+    }
+
+
+
+
+    .MainVisual .main_slide .itm01 .slide-img {
+
+
+        /* r */
+        background: url(../img/main_01.jpg) no-repeat 50% center/cover;
+    }
+
+    .MainVisual .main_slide .itm02 .slide-img {
+
+
+        /* r */
+        background: url(../img/main_02.jpg) no-repeat 50% top/cover;
+
+    }
+
+    .MainVisual .main_slide .itm03 .slide-img {
+
+
+        /* r */
+        background: url(../img/main_03.jpg) no-repeat 50% top/cover;
+    }
+
+    .MainVisual .main_slide .itm04 .slide-img {
+
+
+        /* r */
+        background: url(../img/main_04.jpg) no-repeat 50% top/cover;
+    }
+
+    .MainVisual .main_slide .itm05 .slide-img {
+
+
+        /* r */
+        background: url(../img/main_05.jpg) no-repeat 50% top/cover;
+    }
+
+
+
+    .MainItm .detail .txt {
+
+
+        /* r */
+        position: static;
+        opacity: 1;
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .MainItm .detail .txt02 {
+
+
+        /* r */
+        position: static;
+        opacity: 1;
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .MainItm .detail .txt h3 {
+
+
+        /* r */
+        font-size: 35px;
+    }
+
+    .MainItm .detail .txt02 strong {
+
+
+        /* r */
+        margin: 0 0 10px 0;
+        font-size: 20px;
+    }
+
+    .MainItm .detail .txt02 p {
+
+        /* r */
+        margin: 0 0 10px 0;
+        font-size: 15px;
+    }
+
+
+
+    .MainItm .detail figure img {
+
+
+
+
+        /* r */
+        width: 85%;
+        transform: scale(1);
+        transform-origin: 0 0;
+        margin: 0 30px;
+    }
+
+    .MainItm .detail.swiper-slide-next figure img {
+
+
+        /* r */
+        transition: 0;
+        transform-origin: 0 0;
+        animation: sc 0 0 both;
+        margin: 0 25px;
+    }
+
+
+
+    .MainItm .arrows {
+
+
+        /* r */
+        z-index: 999;
+    }
+
+
+
+    .MainBenefit .benefit_wrap {
+
+        /* r */
+        width: auto;
+    }
+
+
+    .MainBenefit .list {
+
+        /* r */
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .MainReward .inner {
+
+
+        /* r */
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .MainReward .list {
+
+
+        /* r */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+
+    .MainOrder .order_wrap {
+
+        /* r */
+        width: auto;
+    }
+
+    .MainOrder .order_wrap .inner {
+
+        /* r */
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 0 0 0;
+    }
+
+
+
+    .Footer {
+        padding: 50px 15px;
+    }
+
+    .Footer .top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Footer .top .left {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .Footer .top .left a {
+        text-align: center;
+    }
+
+    .Footer .top .right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .Footer .top .right li~li::before {
+        display: none;
+    }
+
+    .Footer .bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Footer .author ul span {
+        display: block;
+        padding: 0 0;
+
+    }
+
+    .Footer .author ul span::before {
+        display: none;
+    }
+
+
+    /* r */
+    .mobile_btn {
+        /* r */
+        display: block;
+
+        position: fixed;
+        inset: 30px 30px auto auto;
+        z-index: 1000;
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        border-radius: 5px;
+    }
+
+    .mobile_btn::before,
+    .mobile_btn::after {
+        content: "";
+        position: absolute;
+        inset: 14px 5px auto 5px;
+        height: 2px;
+        background: #444;
+
+    }
+
+    .mobile_btn.on::before {
+        transform: rotate(45deg);
+        transition: 0.5s 0.2s;
+    }
+
+    .mobile_btn.on::after {
+        transform: rotate(-45deg);
+        transition: 0.5s 0.6s;
+    }
+
+
+
+    .mobile_btn button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .mobile_btn button::before,
+    .mobile_btn button::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: #444;
+    }
+
+    .mobile_btn button::before {
+        inset: 7px 5px auto 5px;
+    }
+
+    .mobile_btn button::after {
+        inset: auto 5px 7px 5px;
+    }
+
+    .mobile_btn.on button::before {
+        display: none;
+    }
+
+    .mobile_btn.on button::after {
+        display: none;
+    }
+
+
+
+
+
+}

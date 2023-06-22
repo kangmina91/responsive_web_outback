@@ -5,10 +5,363 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아웃백 실습 - 반응형</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/custom.js"></script>
 </head>
 
 <body>
+    <header class="Header">
+        <div class="inner">
+            <h1>
+                <a href="/" class="logo">
+                    <span class="blind">
+                        캥거루고기집
+                    </span>
+                </a>
+            </h1>
+            <nav class="Gnb">
+                <h2 class="blind">메뉴</h2>
+                <ul>
+                    <li><a href="">BRAND</a>
+                        <ul class="snb">
+                            <li><a href="">OUTBACK STORY</a></li>
+                            <li><a href="">BEEF STORY</a></li>
+                            <li><a href="">STEAK ACADEMY</a></li>
+                            <li><a href="">OUTBACK CSR</a></li>
+                            <li><a href="">PRESS CENTER</a></li>
 
+                        </ul>
+                    </li>
+
+                    <li><a href="">MENU</a>
+                        <ul class="snb">
+                            <li><a href="">TOMAHAWK STEAK</a></li>
+                            <li><a href="">PERFECT BONE-IN STEAK EDITION</a></li>
+                            <li><a href="">PORTERHOUSE STEAK</a></li>
+                            <li><a href="">BLACK LABEL STEAKS</a></li>
+                            <li><a href="">STEAK ＆ FAVORITES</a></li>
+                            <li><a href="">LUNCH SET</a></li>
+                            <li><a href="">PASTA ＆ SALADS</a></li>
+                            <li><a href="">WINES</a></li>
+                            <li><a href="">DESSERTS ＆ OTHERS</a></li>
+                            <li><a href="">DELIVERY</a></li>
+                            <li><a href="">LUNCH BOX</a></li>
+                            <li><a href="">LIMITED SPECIAL MENU FOR JEJU</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">MEMBERSHIP</a></li>
+                    <li><a href="">BENEFIT</a></li>
+                    <li><a href="">ACADEMY</a></li>
+                    <li><a href="">STORE</a></li>
+                </ul>
+            </nav>
+            <ul class="login">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="mobile_btn">
+            <button>
+                <span class="blind">모바일 버튼</span>
+            </button>
+        </div>
+    </header>
+
+    <main role='main' class="Main">
+
+        <section class="MainVisual">
+            <h2 class="blind">메인 슬라이드</h2>
+            <div class="swiper main_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide itm itm01">
+                        <div class="slide-img" data-swiper-parallax="50%">
+                            <span class="blind"> 캥거루고기집 </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itm itm02">
+                        <div class="slide-img" data-swiper-parallax="50%">
+                            <span class="blind"> 캥거루고기집 </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itm itm03">
+                        <div class="slide-img" data-swiper-parallax="50%">
+                            <span class="blind"> 캥거루고기집 </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itm itm04">
+                        <div class="slide-img" data-swiper-parallax="50%">
+                            <span class="blind"> 캥거루고기집 </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itm itm05">
+                        <div class="slide-img" data-swiper-parallax="50%">
+                            <span class="blind"> 캥거루고기집 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="arrows">
+                <li class="left">
+                    <span class="blind">이전</span>
+                </li>
+                <li class="right">
+                    <span class="blind">이후</span>
+                </li>
+            </ul>
+            <ul class="dots">
+                <li><span>01</span></li>
+                <li><span>02</span></li>
+                <li><span>03</span></li>
+                <li><span>04</span></li>
+                <li><span>05</span></li>
+            </ul>
+        </section>
+
+        <section class="MainItm section">
+            <h2 class="blind">메뉴</h2>
+            <div class="inner">
+                <div class="swiper itm_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide detail">
+                            <div class="itm">
+                                <div class="txt">
+                                    <h3>BABY BACK RIBS</h3>
+                                </div>
+                                <div class="txt02">
+                                    <strong>베이비 백 립</strong>
+                                    <p>
+                                        부드러운 돼지갈비에 아웃백만의 특제 소스를 발라 구워낸 바비큐 요리
+                                    </p>
+                                </div>
+                                <figure>
+                                    <img src="./img/product_01.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide detail">
+                            <div class="itm">
+                                <div class="txt">
+                                    <h3>AUSSIE CHEESE FRIES</h3>
+                                </div>
+                                <div class="txt02">
+                                    <strong>오지 치즈 후라이즈</strong>
+                                    <p>
+                                        두툼한 감자튀김에 체다치즈, 잭치즈를 듬뿍 녹여 베이컨을 뿌린 메뉴
+                                    </p>
+                                </div>
+                                <figure>
+                                    <img src="./img/product_02.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide detail">
+                            <div class="itm">
+                                <div class="txt">
+                                    <h3>GOLD COAST COCONUT SHRIMP</h3>
+                                </div>
+                                <div class="txt02">
+                                    <strong>골드 코스트 코코넛 슈림프</strong>
+                                    <p>
+                                        달콤하고 고소한 코코넛 가루를 묻혀 바삭하게 튀긴 새우 요리
+                                    </p>
+                                </div>
+                                <figure>
+                                    <img src="./img/product_03.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide detail">
+                            <div class="itm">
+                                <div class="txt">
+                                    <h3>GARLIC RIBEYE</h3>
+                                </div>
+                                <div class="txt02">
+                                    <strong>갈릭 립아이</strong>
+                                    <p>발사믹 소스에 조리한 마늘이 어우러진 꽃등심 스테이크</p>
+                                </div>
+                                <figure>
+                                    <img src="./img/product_04.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <i class="xi-arrow-left left"></i>
+                    <i class="xi-arrow-right right"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="MainBenefit section">
+            <div class="benefit_wrap">
+                <div class="inner">
+                    <div class="title">
+                        <h2>OUTBACK BENEFIT</h2>
+                        <p>다양한 멤버십과 제휴 할인 혜택을 누리세요</p>
+                    </div>
+                    <ul class="list">
+                        <li><a href=""><img src="./img/main_benefit_icon_01.png" alt="">
+                                <strong>MEMBERSHIP</strong>
+                                <p>부메랑클럽 가입하고
+                                    멤버십 혜택 풍성하게 즐겨보세요</p>
+                            </a></li>
+                        <li><a href=""><img src="./img/main_benefit_icon_02.png" alt="">
+                                <strong>DISCOUNT</strong>
+                                <p>아웃백 제휴 할인 혜택의
+                                    기회를 놓치지 마세요</p>
+                            </a>
+                        </li>
+                        <li><a href=""><img src="./img/main_benefit_icon_03.png" alt="">
+                                <strong>GIFT CARD</strong>
+                                <p>소중한 사람에게
+                                    감사한 마음을 선물하세요</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="MainReward section">
+            <div class="inner">
+                <div class="title">
+                    <div class="case">
+                        <h2>
+                            <span>BOOMERANG</span>
+                            <strong>REWARD</strong>
+                        </h2>
+                        <p>부메랑 카드<br />
+                            리워드 혜택을 만나보세요</p>
+                        <a href="" class="btn">자세히 보기</a>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li data-num="01">
+                        <strong>와인 2잔 10,700원</strong>
+                        <p>와인 2잔을 10,700원에
+                            즐길 수 있는 혜택 제공</p>
+                    </li>
+                    <li data-num="02">
+                        <strong>1년 1회, 부메랑 쿠폰</strong>
+                        <p>부메랑 회원이라면 누구나
+                            1만원 할인 혜택 제공</p>
+                    </li>
+                    <li data-num="03">
+                        <strong>본-인 스테이크 쿠폰</strong>
+                        <p>본-인 스테이크 한정
+                            1만원 할인 혜택 제공</p>
+                    </li>
+                    <li data-num="04">
+                        <strong>10% 할인 또는 2% 적립</strong>
+                        <p>부메랑 카드만 있다면
+                            10% 할인 또는 2% 적립!</p>
+                    </li>
+                    <li data-num="05">
+                        <strong>부메랑 포인트</strong>
+                        <p>3,000P 이상 보유 시,
+                            10P 단위로 현금처럼 사용 가능</p>
+                    </li>
+                    <li data-num="06">
+                        <strong>부메랑 회원전용 이벤트 참여</strong>
+                        <p>부메랑 전용 다양한 이벤트
+                            참여 기회 제공</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="MainOrder">
+            <h2 class="blind">주문하기</h2>
+            <div class="order_wrap">
+                <ul class="inner list">
+                    <li class="icon01">
+                        <a href="">
+                            <div class="txt">
+                                <strong>RESERVE</strong>
+                                <span>주문하기</span>
+                                <b class="arrow"><span class="blind">화살표</span></b>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/speed_menu_icon_02.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" icon02">
+                        <a href="">
+                            <div class="txt">
+                                <strong>SAVE POINT</strong>
+                                <span>사후적립</span>
+                                <b class="arrow"><span class="blind">화살표</span></b>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/speed_menu_icon_03.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" icon03">
+                        <a href="">
+                            <div class="txt">
+                                <strong>DELIVERY</strong>
+                                <span>딜리버리 전화주문 <br /> 1811-3650</span>
+                                <b class="arrow"><span class="blind">화살표</span></b>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/speed_menu_icon_04.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="Footer">
+        <h2 class="blind">고개지원</h2>
+        <div class="inner">
+            <div class="top">
+                <ul class="left">
+                    <li><a href="">아웃백 소개</a></li>
+                    <li><a href="">채용 안내</a></li>
+                    <li><a href="">신규 입점 제의</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="">홈페이지 이용약관</a></li>
+                    <li><a href="">위치정보</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">윤리경영</a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">모바일 아웃백</a></li>
+                    <li><a href="">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <address class="author">
+                    <ul class="copyright">
+                        <li>대표이사 : 박현종 <span>/</span>
+                            주소 : 서울 송파구 올림픽로 300 19층</li>
+                        <li>사업자등록번호 : 211-86-42619 <span>/</span> 통신판매업신고번호 : 제2022-서울송파-1754호 사업자정보확인</li>
+                    </ul>
+                    <ul class="contact">
+                        <li>홈페이지 관련 문의 <Strong>070-7096-0416</Strong></li>
+                        <li>상담시간 : 월~금 10:00~17:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</li>
+                        <li>대표번호 <Strong>1577-0500</Strong> <span>/</span> 딜리버리 주문번호 <Strong>1811-3650</Strong></li>
+                    </ul>
+                    <span>&copy; OUTBACK STEAKHOUSE all rights reserved.</span>
+                </address>
+                <ul class="sns">
+                    <li><a href="" target="_blank"><i class="xi-facebook"></i></a></li>
+                    <li><a href="" target="_blank"><i class="xi-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="xi-youtube-play"></i></a></li>
+                    <li><a href="" target="_blank"><i class="xi-kakaostory"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
-
-</html>
